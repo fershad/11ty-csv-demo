@@ -1,0 +1,8 @@
+---
+permalink: 'books.csv'
+---
+ISBN,Title,Author,Website
+{%- for book in books -%}
+{{ "" }}
+{{ book.isbn }},"{{ book.title }}","{{ book.author }}",{{ book.website }}
+{%- endfor -%}
